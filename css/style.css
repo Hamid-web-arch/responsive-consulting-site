@@ -411,13 +411,13 @@ header .header-info a {
 /* !FEATURED CASE STUDY */
 #featured {
   background-color: var(--section-background-color);
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 #featured .all-cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 30px;
 }
 
 /* CARD IMAGE*/
@@ -458,6 +458,96 @@ header .header-info a {
     sans-serif;
   color: var(--black-color);
 }
+
+/* !OUR CASE STUDIES */
+#studies {
+  padding: 60px 0;
+}
+
+#studies .head-info {
+  text-align: center;
+}
+/* ALL CARDS */
+#studies .all-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* CARD */
+#studies .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 15px 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* CARD IMAGE */
+#studies .card-img {
+  width: 100%;
+}
+
+#studies .card-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+/* CARD INFO */
+#studies .card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  flex-grow: 1;
+}
+
+#studies .card-info a {
+  font:
+    400 20px "Roboto",
+    sans-serif;
+  color: var(--head-text-color);
+}
+
+#studies .card-info p {
+  font:
+    400 14px "Poppins",
+    sans-serif;
+  color: #666;
+  line-height: 28px;
+}
+
+/* CARD INFO BOTTOM */
+#studies .card-info-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin-top: auto;
+}
+
+#studies .card-info-bottom span {
+  font:
+    400 13px "Poppins",
+    sans-serif;
+  color: #888;
+}
+
+#studies .card-info-bottom strong {
+  text-transform: capitalize;
+  font:
+    700 13px "Poppins",
+    sans-serif;
+  color: var(--head-text-color);
+}
+
+#studies .card-info-bottom .right {
+  color: #14435c;
+  font-weight: 600;
+}
+
 /* !MEDIA 768 */
 @media (min-width: 768px) {
   /* !HEADER */
@@ -481,6 +571,12 @@ header .header-info a {
     width: 80%;
     position: relative;
     margin-top: -50px;
+  }
+
+  /* !OUR CASE STUDIES */
+  /* ALL CARDS */
+  #studies .all-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
@@ -546,9 +642,18 @@ header .header-info a {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 40px;
   }
+
+  #featured {
+    padding: 60px 0;
+  }
+  /* !OUR CASE STUDIES */
+  /* ALL CARDS */
+  #studies .all-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-@media(min-width:1024px){
+@media (min-width: 1024px) {
   /* !FEATURED CASE STUDY */
   #featured .all-cards {
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
