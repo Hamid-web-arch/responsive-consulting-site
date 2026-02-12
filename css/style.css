@@ -16,7 +16,7 @@ html {
 }
 
 .container {
-  width: 90%;
+  width: 92%;
   margin: 0 auto;
 }
 
@@ -873,6 +873,282 @@ header .header-info a {
   margin-right: 8px;
 }
 
+/* !CHOOSE YOUR PLAN */
+#plan {
+  padding: 30px 0;
+}
+
+/* PLAN BG */
+#plan .plan-bg {
+  background: url(../img/plan/plan-bg.webp) center/cover;
+}
+
+#plan .all-plan {
+  padding: 60px 0;
+}
+/* HEAD INFO */
+#plan .head-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#plan .head-info span,
+#plan .head-info h2 {
+  color: #fff !important;
+}
+
+#plan .head-info span::before {
+  background-color: #fff;
+}
+/* ALL PLAN */
+#plan .all-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* PLAN CARD */
+#plan .card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px 20px;
+}
+
+/* CARD PRİCİNG */
+#plan .card .card-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+#plan .card .card-pricing i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6ebed;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 26px;
+  color: #14435c;
+}
+
+#plan .card .card-pricing h3 {
+  font:
+    400 22px "Roboto",
+    sans-serif;
+  text-transform: capitalize;
+  color: #092c3f;
+}
+
+#plan .card .card-pricing p {
+  font:
+    400 14px "Poppins",
+    sans-serif;
+
+  color: #888;
+}
+#plan .card .card-pricing .price {
+  display: flex;
+  align-items: center;
+}
+
+#plan .card .card-pricing .price-left .value {
+  font:
+    700 24px "Poppins",
+    sans-serif;
+  color: #1f2b7b;
+  position: relative;
+  top: -15px;
+}
+
+#plan .card .card-pricing .price-left .count {
+  font:
+    700 48px "Poppins",
+    sans-serif;
+  color: #092c3f;
+}
+
+#plan .price-right {
+  position: relative;
+  bottom: -10px;
+}
+
+#plan .card .card-pricing .price-right span {
+  font:
+    400 14px "Poppins",
+    sans-serif;
+  color: #888;
+}
+
+/* CARD LIST */
+#plan .card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#plan .card hr {
+  background-color: #eee;
+}
+
+#plan .card li {
+  font:
+    400 15px "Poppins",
+    sans-serif;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+#plan .card li i {
+  color: #14435c;
+  margin-right: 8px;
+  font-size: 16px;
+}
+#plan .card .passiv {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+#plan .card .without i {
+  color: #bbb;
+}
+
+/* CARD BUTTON */
+#plan .button {
+  display: flex;
+  justify-content: center;
+}
+
+#plan .card a {
+  display: inline-block;
+  text-transform: uppercase;
+  font:
+    700 16px "Roboto",
+    sans-serif;
+  color: #fff;
+  background-color: #ff2143;
+  padding: 6px 28px;
+  margin-top: 10px;
+}
+
+/* MOST POPULAR CARD */
+#plan .most-popular {
+  background: #ff2143;
+  position: relative;
+}
+
+#plan .most-popular .popular {
+  background: #ed0024;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font:
+    500 12px "Poppins",
+    sans-serif;
+  padding: 5px 16px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#plan .most-popular li,
+#plan .most-popular i,
+#plan .most-popular p,
+#plan .most-popular h3,
+#plan .most-popular span {
+  color: #fff !important;
+}
+
+#plan .most-popular .card-pricing i {
+  background: #ffffff40;
+}
+
+#plan .most-popular a {
+  color: #ff2143;
+  background-color: #fff;
+}
+
+/* !FAQ */
+#faq .all-faq {
+  padding: 40px 0;
+}
+
+#faq .head-info {
+  text-align: center;
+}
+
+#faq .all-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+#faq .card {
+  border: 1px solid #dadada;
+  border-radius: 10px;
+}
+
+#faq .card h2 {
+  font:
+    600 18px "Roboto",
+    sans-serif;
+  color: #092d40;
+  padding: 20px 16px;
+  border-radius: 10px 10px 0 0;
+}
+
+#faq .card .active {
+  background: #14435c;
+  color: #fff;
+}
+
+#faq .card p {
+  font:
+    400 15px "Poppins",
+    sans-serif;
+  padding: 20px 16px;
+  line-height: 26px;
+  color: #666;
+}
+
+/* !MORE ABOUT */
+#more-about {
+  background: url(../img/more-about/bg.webp) center/cover;
+}
+
+#more-about .all-more-about {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#more-about h2 {
+  font:
+    700 25px "Roboto",
+    sans-serif;
+  color: #fff;
+}
+
+#more-about a {
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font:
+    500 16px "Roboto",
+    sans-serif;
+  padding: 16px 32px;
+  align-self: flex-end;
+}
+
 /* !MEDIA 575 */
 @media (min-width: 575px) {
   /* !COUNT CARDS */
@@ -949,6 +1225,22 @@ header .header-info a {
   /* ALL CARDS */
   #team-members .all-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* !CHOOSE YOUR PLAN */
+  /* ALL PLAN */
+  #plan .all-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #plan .all-cards .card:nth-child(3) {
+    grid-column: 1 / 3;
+    justify-self: center;
+  }
+  /* !MORE ABOUT */
+  #more-about .all-more-about {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -1059,16 +1351,48 @@ header .header-info a {
   #team-members .all-cards {
     grid-template-columns: repeat(3, 1fr);
   }
+  /* !CHOOSE YOUR PLAN */
+  /* ALL PLAN */
+  #plan .all-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  #plan .all-cards .card:nth-child(3) {
+    grid-column: auto;
+    justify-self: stretch;
+  }
+
+  #plan .card {
+    padding: 60px 20px;
+  }
+  /* !MORE ABOUT */
+  #more-about .all-more-about h2 {
+    font-size: 48px;
+  }
+  #more-about .all-more-about a {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
   /* CONTAINER */
-  .container {
-    /* max-width: 1300px; */
-  }
+  /* .container {
+    max-width: 1300px;
+  } */
   /* !FEATURED CASE STUDY */
   #featured .all-cards {
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
     gap: 40px;
+  }
+
+  /* !FAQ */
+  #faq .all-cards {
+    padding: 40px 0;
+  }
+
+  #faq .card {
+    width: 65%;
+    margin: 0 auto;
   }
 }
