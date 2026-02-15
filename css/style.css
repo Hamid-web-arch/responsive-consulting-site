@@ -1366,7 +1366,7 @@ footer .footer-bottom p {
   font-size: 14px;
 }
 
-footer .footer-bottom a{
+footer .footer-bottom a {
   color: #fff;
 }
 
@@ -1639,9 +1639,9 @@ footer .footer-bottom .social i:hover {
 
 @media (min-width: 1024px) {
   /* CONTAINER */
-  /* .container {
+  .container {
     max-width: 1300px;
-  } */
+  }
   /* !FEATURED CASE STUDY */
   #featured .all-cards {
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
