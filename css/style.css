@@ -1252,6 +1252,136 @@ header .header-info a {
   width: auto;
   max-height: 80px;
 }
+/* !FOOTER */
+.footer-bg {
+  background: url(../img/footer.webp) center/cover;
+}
+
+.all-footer {
+  padding: 60px 0;
+}
+
+/* LOGO */
+footer .logo {
+  width: 150px;
+}
+
+footer .contact h4 {
+  margin-bottom: 10px;
+}
+
+.all-footer p {
+  font:
+    400 16px "Poppins",
+    sans-serif;
+  color: #bdbdbd;
+}
+
+.all-footer .phone {
+  font:
+    500 30px "Roboto",
+    sans-serif;
+  color: #ff0000;
+}
+
+.all-footer .phone span {
+  color: #fff;
+}
+
+.all-footer h3 {
+  font:
+    500 18px "Poppins",
+    sans-serif;
+  color: #fff;
+}
+
+footer .column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .column li {
+  transition: 0.4s;
+}
+
+footer .column ul a {
+  font:
+    400 16px "Poppins",
+    sans-serif;
+  color: #bdbdbd;
+}
+
+footer .column ul li:hover {
+  transform: translateX(-5px);
+}
+
+footer .all-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+footer .column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+footer .column .signup {
+  display: flex;
+}
+footer .column .signup input {
+  background: #1a222e;
+  border: 1px solid #2a3444;
+  padding: 12px 0 12px 20px;
+}
+
+::placeholder {
+  text-transform: capitalize;
+}
+
+footer .column .signup button {
+  background: #14435c;
+  text-transform: uppercase;
+  font:
+    500 13px "Poppins",
+    sans-serif;
+  border: 1px solid #14435c;
+  color: #fff;
+  padding: 0 20px;
+}
+
+footer .footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0;
+  border-top: 1px solid #233148;
+  margin-top: 40px;
+}
+
+footer .footer-bottom p {
+  font-size: 14px;
+}
+
+footer .footer-bottom .social {
+  display: flex;
+  gap: 20px;
+}
+
+footer .footer-bottom .social i {
+  color: #bdbdbd;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+footer .footer-bottom .social i:hover {
+  color: #fff;
+  transform: scale(1.1);
+  transform: translate(-8px);
+}
 
 /* !MEDIA 575 */
 @media (min-width: 575px) {
@@ -1356,6 +1486,12 @@ header .header-info a {
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     padding: 40px 0;
+  }
+  /* !FOOTER */
+  footer .all-columns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -1487,6 +1623,13 @@ header .header-info a {
   }
   #more-about .all-more-about a {
     font-size: 20px;
+  }
+
+  /* !FOOTER */
+  footer .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
