@@ -30,8 +30,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- !CARUSEL -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
+    <!-- CARUSEL -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <!-- !HEADER -->
     <header>
       <div class="header-top-bg">
@@ -601,5 +609,106 @@
         </div>
       </div>
     </section>
+    <!-- !OUR RECENT BLOG -->
+    <section id="blog">
+      <div class="container">
+        <!-- HEAD INFO -->
+        <div class="head-info">
+          <span>Recent News of us</span>
+          <h2>Our Recent Blog</h2>
+        </div>
+        <!-- ALL CARDS -->
+        <div class="all-cards">
+          <!-- CARD -->
+          <div class="card">
+            <!-- IMG -->
+            <div class="card-img">
+              <img src="img/blog/card1.webp" alt="card1" />
+            </div>
+            <span class="date">By Admin - October 27, 2032</span>
+            <!-- INFO -->
+            <div class="card-info">
+              <h3>16 Easy Ideas to Use in Everyday</h3>
+              <p>
+                Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magnua Quis ipsum suspendisse
+                ultrices gra.
+              </p>
+              <span class="bottom">read more</span>
+            </div>
+          </div>
+          <!-- CARD -->
+          <div class="card">
+            <!-- IMG -->
+            <div class="card-img">
+              <img src="img/blog/card2.webp" alt="card2" />
+            </div>
+            <span class="date">By Admin - October 27, 2032</span>
+            <!-- INFO -->
+            <div class="card-info">
+              <h3>16 Easy Ideas to Use in Everyday</h3>
+              <p>
+                Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magnua Quis ipsum suspendisse
+                ultrices gra.
+              </p>
+              <span class="bottom">read more</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !SPONSORS -->
+    <section id="sponsors">
+      <div class="container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/sponsors/brand1.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/sponsors/brand2.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/sponsors/brand3.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/sponsors/brand5.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/sponsors/brand1.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/sponsors/brand2.webp" alt="" />
+            </div>
+          </div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARUSEL -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true, // sonsuz sürüş
+        slidesPerView: 4,
+        spaceBetween: 30,
+        autoplay: {
+          // avtomatik sürüş
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          // responsiv üçün
+          320: { slidesPerView: 1, spaceBetween: 10 },
+          480: { slidesPerView: 2, spaceBetween: 20 },
+          768: { slidesPerView: 3, spaceBetween: 20 },
+          1024: { slidesPerView: 4, spaceBetween: 30 },
+        },
+      });
+    </script>
   </body>
 </html>

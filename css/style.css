@@ -16,7 +16,7 @@ html {
 }
 
 .container {
-  width: 92%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -1149,6 +1149,110 @@ header .header-info a {
   align-self: flex-end;
 }
 
+/* !OUR RECENT BLOG */
+#blog {
+  padding: 40px 0;
+}
+
+#blog .all-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+#blog .card {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#blog .card-img {
+  overflow: hidden;
+}
+
+#blog .card img {
+  width: 100%;
+  object-fit: center;
+  transition: 0.3s;
+}
+
+#blog .card img:hover {
+  transform: scale(1.1);
+}
+
+#blog .card .date {
+  display: inline-block;
+  padding: 20px 0 20px 16px;
+  width: 70%;
+  background-color: #f7f7f7;
+  font:
+    300 14px "Roboto",
+    sans-serif;
+  position: relative;
+  top: -25px;
+}
+
+#blog .card-info {
+  padding: 20px;
+}
+
+#blog .card-info h3 {
+  font:
+    700 23px "Roboto",
+    sans-serif;
+  color: #191d34;
+}
+
+#blog .card-info p {
+  font:
+    400 16px "Poppins",
+    sans-serif;
+  color: #737980;
+  line-height: 26px;
+  margin: 20px 0;
+}
+
+/* BOTTOM */
+#blog .card-info .bottom {
+  font:
+    400 14px "Roboto",
+    sans-serif;
+  color: #ff2143;
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#blog .card-info .bottom::before {
+  content: "";
+  width: 35px;
+  height: 1px;
+  background-color: #ff2143;
+}
+
+/* !SPONSORS */
+#sponsors {
+  padding: 40px 0;
+}
+
+/* SPONSORS KARUSEL */
+#sponsors .swiper {
+  width: 100%;
+  height: 120px;
+}
+
+#sponsors .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sponsors .swiper-slide img {
+  width: auto;
+  max-height: 80px;
+}
+
 /* !MEDIA 575 */
 @media (min-width: 575px) {
   /* !COUNT CARDS */
@@ -1241,6 +1345,17 @@ header .header-info a {
   #more-about .all-more-about {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  /* !OUR RECENT BLOG */
+  #blog {
+    padding: 40px 0;
+  }
+
+  #blog .all-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 40px 0;
   }
 }
 
