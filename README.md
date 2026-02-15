@@ -21,18 +21,19 @@ This project is a modern, professional website template for a business consultin
 
 ## 📁 Project Structure
 
-ConsultingBiz/
-├── 📂 css
-│ ├── reset.css
-│ └── style.css
-├── 📂 img
-│ ├── services/
-│ ├── featured/
-│ ├── team-members/
-│ ├── blog/
-│ └── sponsors/
-├── 📄 index.html
-└── 📄 README.md
+ConsultingBiz/ 
+
+├── 📂 css  
+│ ├── reset.css  
+│ └── style.css  
+├── 📂 img  
+│ ├── services/  
+│ ├── featured/  
+│ ├── team-members/  
+│ ├── blog/  
+│ └── sponsors/  
+├── 📄 index.html  
+└── 📄 README.md  
 
 
 ## ✍️ Author
