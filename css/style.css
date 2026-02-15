@@ -1366,6 +1366,10 @@ footer .footer-bottom p {
   font-size: 14px;
 }
 
+footer .footer-bottom a{
+  color: #fff;
+}
+
 footer .footer-bottom .social {
   display: flex;
   gap: 20px;
