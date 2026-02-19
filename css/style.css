@@ -104,6 +104,43 @@ html {
   font-size: 26px;
 }
 
+/* HAMBURGER MENU */
+.hamburger-menu-list {
+  background-color: #f1f1f1;
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  transition: 0.5s;
+  transform: translateX(100%);
+}
+
+.transform {
+  transform: translateX(0);
+}
+
+.hamburger-menu-list i {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.hamburger-menu-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hamburger-menu-list ul a {
+  font:
+    400 18px "Poppins",
+    sans-serif;
+  text-transform: capitalize;
+  color: #0d2d3e;
+}
+
 /* HEADER BG IMAGE */
 .header-bg-img {
   background: url(../img/header-bg.jpg) center/cover;
