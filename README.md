@@ -34,6 +34,7 @@ ConsultingBiz/
 │ └── sponsors/  
 ├── 📄 index.html  
 └── 📄 README.md  
+└── script.js 
 
 
 ## ✍️ Author
